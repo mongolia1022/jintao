@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="dist/css/swiper.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+
+<!--JQ基础文件-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<!--IE6 PNG透明-->
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+
+<!--TAB JS-->
+<script type="text/javascript"> 
+function setTab(m,n){ 
+var menu=document.getElementById("tab"+m).getElementsByTagName("li");  
+var div=document.getElementById("tablist"+m).getElementsByTagName("div"); 
+var showdiv=[]; 
+	for (i=0; j=div[i]; i++)
+	{  
+		if((" "+div[i].className+" ").indexOf(" tablist ")!=-1)
+		{  
+			showdiv.push(div[i]); 
+		} 
+	}  
+	for(i=0;i<menu.length;i++)
+	{  
+		menu[i].className=i==n?"now":"";  
+		showdiv[i].style.display=i==n?"block":"none"; 
+	}  
+}  
+</script>
+
+</head>
+
+<body>
+
+<!-- 头部 -->
+<div class="top">
+	<div class="top_in">
+    	<div class="logo"><img src="images/logo.png" /></div>
+        <div class="logo_r">
+        	<div class="search">
+                <div class="search_r"><input type="image" src="images/search_r.png" ></div>
+                <div class="search_l"><input id="txt_search" type="text"   value="Search..."  onFocus="if(value==defaultValue){value='';this.style.color='#484848'}" onBlur="if(!value){value=defaultValue;this.style.color='#d4d4d4'}" style="color:#d4d4d4"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="nav">
+            	<ul>
+                	<li><a href="#" class="now">首页</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">企业简介</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">新闻中心</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">产品展示</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">生产中心</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">工程案例</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper -->
+<div class="swiper-container swiper1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    
+</div>
+<!-- Swiper JS -->
+<script src="dist/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+var swiper1 = new Swiper('.swiper1', {
+	pagination: '.swiper-pagination',
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev',
+	paginationClickable: true,
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: 2500,
+	autoplayDisableOnInteraction: false,
+	effect: 'fade'
+});
+
+</script>
+
+<!-- 首页标题 -->
+<div class="idx_title">
+	<span>产品展示</span>
+    <label>PRODUCTS SHOW</label>
+</div>
+
+<!-- 产品 -->
+<div class="idx_hot">
+
+	<div class="idx_tab_t" id="tab1">
+        <ul>
+            <li onmouseover="setTab(1,0)" class="now"><a href="#">推拉窗系列</a></li>
+            <span>　　|　　</span>
+            <li onmouseover="setTab(1,1)"><a href="#">平开窗系列</a></li>
+            <span>　　|　　</span>
+            <li onmouseover="setTab(1,2)"><a href="#">平开门系列</a></li>
+            <span>　　|　　</span>
+            <li onmouseover="setTab(1,3)"><a href="#">断桥隔热系列</a></li>
+            <span>　　|　　</span>
+            <li onmouseover="setTab(1,4)"><a href="#">幕墙系列</a></li>
+            <span>　　|　　</span>
+            <li onmouseover="setTab(1,5)"><a href="#">通用型材系列</a></li>
+        </ul>
+    </div>
+
+	<div id="tablist1">
+        <div class="idx_tab_b tablist fixon" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="idx_tab_b tablist" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="idx_tab_b tablist" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="idx_tab_b tablist" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="idx_tab_b tablist" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="idx_tab_b tablist" >
+        	<div class="por_list_in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/pro.gif" width="280" height="280" /></a>
+                        <span><a href="#">产品名称产品名称</a></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 工程案例 -->
+<div class="project_title"></div>
+<div class="bg_gray">
+	<div class="idx_project">
+    	<ul>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <li>
+                <a href="#"><img src="images/prj.gif" /></a>
+                <span><a href="#">通海火车站</a></span>
+                <label>高端大气铝结构设计</label>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+<!-- 关于我们 -->
+<div class="idx_title">
+	<span>关于我们</span>
+    <label>about us</label>
+</div>
+<div class="idx_abut">
+	<div class="idx_abut_l"><img src="images/idx_about.jpg" width="576" height="340" /></div>
+	<div class="idx_abut_r">
+    	<div class="idx_abut_r_t_l"><img src="images/idx_about_t_l.gif" /></div>
+    	<div class="idx_abut_r_t_r"><img src="images/idx_about_t_r.gif" /></div>
+        我们成立于2006年7月，是目前中国领先的铝合金门窗提供商之一。成立10多年以来，我们一直秉承“一切以用户价值为依归”的经营理念，为亿级海量用户提供稳定优质的各类服务，始终处于稳健发展的状态。面向未来，坚持自主创新，树立民族品牌是我们的长远发展规划。
+我们成立于2006年7月，是目前中国领先的铝合金门窗提供商之一。成立10多年以来，我们一直秉承“一切以用户价值为依归”的经营理念，为亿级海量用户提供稳定优质的各类服务，始终处于稳健发展的状态。面向未来，坚持自主创新，树立民族品牌是我们的长远发展规划。
+    </div>
+    <div class="idx_abut_more"><a href="#"><img src="images/more.png" /></a></div>
+    <div class="clear"></div>
+</div>
+
+<!-- 广告 -->
+<div class="idx_av1"></div>
+<div class="idx_av2">
+	<div class="idx_av_in">
+    	<div class="idx_av2_more1"><a href="###"></a></div>
+    	<div class="idx_av2_more2"><a href="###"></a></div>
+    </div>
+</div>
+<div class="idx_av3">
+	<div class="idx_av_in">
+		<div class="idx_av3_more"><a href="###"></a></div>
+    </div>
+</div>
+
+<!-- 首页新闻+FAQ -->
+<div class="news_fqa">
+
+	<!-- 新闻 -->
+  	<div class="idx_news">
+    	<div class="idx_title2"><a href="#"><img src="images/idx_news_title.gif" /></a></div>
+        <div class="idx_news_l">
+       	  <img src="images/idx_news_pro.jpg" width="294" height="280" />
+          <div class="idx_news_l_b">
+           	<a href="###">
+            		<div class="idx_news_l_b_t">提质增效，助力南海区打造质量强区</div>
+            <div class="idx_news_l_b_b">3月30日，2017年南海区定标准、提品质、创品牌质量强区大会隆重举行...</div>
+                </a>
+          </div>
+            
+        </div>
+    	<div class="idx_news_r">
+        	<ul>
+                  <li>
+                    <div class="idx_news_list_l">
+                            <span>2017年12月</span>
+                            <label>16日</label>
+                        </div>
+                        <div class="idx_news_list_r">
+                                <span><a href="#">我司登上“建筑型材十大首选品牌”榜首</a></span>
+                                <label>2017年3月28日，以三心凝聚文化，三创汇聚能量为主题的金桃铝业2017全</label>
+                    </div>
+                        <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="idx_news_list_l">
+                            <span>2017年12月</span>
+                            <label>16日</label>
+                    </div>
+                        <div class="idx_news_list_r">
+                                <span><a href="#">我司登上“建筑型材十大首选品牌”榜首</a></span>
+                                <label>2017年3月28日，以三心凝聚文化，三创汇聚能量为主题的金桃铝业2017全</label>
+                        </div>
+                        <div class="clear"></div>
+                  </li>
+                  <li>
+                    <div class="idx_news_list_l">
+                            <span>2017年12月</span>
+                            <label>16日</label>
+                    </div>
+                        <div class="idx_news_list_r">
+                                <span><a href="#">我司登上“建筑型材十大首选品牌”榜首</a></span>
+                                <label>2017年3月28日，以三心凝聚文化，三创汇聚能量为主题的金桃铝业2017全</label>
+                        </div>
+                        <div class="clear"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <!-- FAQ -->
+  	<div class="idx_faq">
+    	<div class="idx_title2"><a href="#"><img src="images/idx_faq_title.gif" /></a></div>
+        <div class="idx_faq_all">
+        	<div class="idx_faq_list">
+                <ul>
+                    <li>
+                        <label>问</label>
+                        <span>工业铝型材能否代替钢材？</span>
+                    </li>
+                    <li class="asw">
+                        <label>答</label>
+                        <span>由于铝型材的可塑性比较强大，应用的领域...</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="idx_faq_list">
+                <ul>
+                    <li>
+                        <label>问</label>
+                        <span>工业铝型材能否代替钢材？</span>
+                    </li>
+                    <li class="asw">
+                        <label>答</label>
+                        <span>由于铝型材的可塑性比较强大，应用的领域...</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="idx_faq_list">
+                <ul>
+                    <li>
+                        <label>问</label>
+                        <span>工业铝型材能否代替钢材？</span>
+                    </li>
+                    <li class="asw">
+                        <label>答</label>
+                        <span>由于铝型材的可塑性比较强大，应用的领域...</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+  
+	<div class="clear"></div>
+  
+</div>
+
+<!-- 底部 -->
+<div class="foot">
+	<div class="foot_t">
+    	<div class="foot_t_in">
+        	<div class="foot_t_in_l">理念</div>
+        	<div class="foot_t_in_r">创新发展 领航未来  金桃铝业 打造铝型材的知名品牌！</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="foot_m">
+    	<div class="foot_m_in">
+        	<div class="foot_m_qr">
+            	<img src="images/qr.gif" width="70" height="70" />
+                <span>桃园公众号</span>
+            </div>
+            <div class="foot_m_ct">
+            	清远市金桃园铝业有限公司 地址：清远市清城区石角镇循环经济产业园内<br/>
+				联系电话：0763-3719477 QQ：88888888 手机：188888888888 
+            </div>
+          <div class="foot_m_r">
+                <div class="foot_phone iconfont">&#xe64d; 服务热线:0763-319477</div>
+                <div class="foot_search_r"><input type="button" value="搜索"></div>
+                <div class="foot_search_l"><input id="txt_search" type="text"   value="Search..."  onFocus="if(value==defaultValue){value='';this.style.color='#d4d4d4'}" onBlur="if(!value){value=defaultValue;this.style.color='#3d425c'}" style="color:#3d425c"></div>
+                <div class="foot_qw iconfont"><a href="#">&#xe63a;</a> <a href="#">&#xe601;</a></div>
+          </div>
+        </div>
+    </div>
+    <div class="foot_b">
+   	  <div class="foot_b_in">
+        <div class="foot_b_l">
+                版权所有 2015-2017金色桃铝业<br/>
+                2015-2017 www.jintao.com All rights reserved 粤ICP备13018203号-1 
+            </div>
+            <div class="foot_b_r"><a href="#">首页</a>　|　<a href="#">企业简介</a>　|　<a href="#">新闻中心</a>　|　<a href="#">产品展示</a>　|　<a href="#">生产中心</a>　|　<a href="#">工程案例</a>　|　<a href="#">联系我们</a></div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>

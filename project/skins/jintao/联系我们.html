@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="dist/css/swiper.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+
+<!--JQ基础文件-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<!--IE6 PNG透明-->
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+
+<!--TAB JS-->
+<script type="text/javascript"> 
+function setTab(m,n){ 
+var menu=document.getElementById("tab"+m).getElementsByTagName("li");  
+var div=document.getElementById("tablist"+m).getElementsByTagName("div"); 
+var showdiv=[]; 
+	for (i=0; j=div[i]; i++)
+	{  
+		if((" "+div[i].className+" ").indexOf(" tablist ")!=-1)
+		{  
+			showdiv.push(div[i]); 
+		} 
+	}  
+	for(i=0;i<menu.length;i++)
+	{  
+		menu[i].className=i==n?"now":"";  
+		showdiv[i].style.display=i==n?"block":"none"; 
+	}  
+}  
+</script>
+
+</head>
+
+<body>
+
+<!-- 头部 -->
+<div class="top">
+	<div class="top_in">
+    	<div class="logo"><img src="images/logo.png" /></div>
+        <div class="logo_r">
+        	<div class="search">
+                <div class="search_r"><input type="image" src="images/search_r.png" ></div>
+                <div class="search_l"><input id="txt_search" type="text"   value="Search..."  onFocus="if(value==defaultValue){value='';this.style.color='#484848'}" onBlur="if(!value){value=defaultValue;this.style.color='#d4d4d4'}" style="color:#d4d4d4"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="nav">
+            	<ul>
+                	<li><a href="#" class="now">首页</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">企业简介</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">新闻中心</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">产品展示</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">生产中心</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">工程案例</a></li>
+                	<li class="ge">|</li>
+                	<li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper -->
+<div class="swiper-container swiper1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+        <div class="swiper-slide" style="background:url(images/banner1.jpg) top center;"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    
+</div>
+<!-- Swiper JS -->
+<script src="dist/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+var swiper1 = new Swiper('.swiper1', {
+	pagination: '.swiper-pagination',
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev',
+	paginationClickable: true,
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: 2500,
+	autoplayDisableOnInteraction: false,
+	effect: 'fade'
+});
+
+</script>
+
+<!-- 内页 -->
+
+<!-- 面包屑 -->
+<div class="braed">
+	<div class="braed_in">
+    	<div class="braed_l">
+        	<ul>
+            	<li><a href="#" class="now">企业简介</a></li>
+            	<li><a href="#">企业文化</a></li>
+            	<li><a href="#">企业荣誉</a></li>
+            	<li><a href="#">企业目标</a></li>
+            </ul>
+        </div>
+    	<div class="braed_r"><a href="#">首页</a>　　/　　<a href="#">产品中心</a>　　/　　<a href="#">产品系列名</a></div>
+    </div>
+</div>
+
+
+<!-- 内页标题 -->
+<div class="in_title">
+	<div class="in_title_t">CONTACT JINTAO</div>
+	<div class="in_title_m">
+    	联系我们
+        <div class="in_title_m_l"></div>
+        <div class="in_title_m_r"></div>
+    </div>
+    <div class="in_title_b">The team's humble, vicious exterior has a group of idealistic lunatics who are committed to growing genes that blossom and blossom</div>
+</div>
+
+<!-- 联系我们 -->
+<div class="contact">
+	<div class="contact_l">电子地图放这里</div>
+    <div class="contact_r">
+    	<div class="contact_r_name">公司名称公司名称公司名称</div>
+        <div class="contact_r_list">
+        	<ul>
+            	<li>
+                	<label class="iconfont">&#xe664;</label>
+                    <span>地址：地址地址地址地址地址地址地址地址地址</span>
+                </li>
+            	<li>
+                	<label class="iconfont">&#xe698;</label>
+                    <span>全国服务热线：+86 400-888-8888</span>
+                </li>
+            	<li>
+                	<label class="iconfont">&#xe676;</label>
+                    <span>联系人：黎先先生</span>
+                </li>
+            	<li>
+                	<label class="iconfont">&#xe874;</label>
+                    <span>传真：+86 757 86888888</span>
+                </li>
+            	<li>
+                	<label class="iconfont">&#xe681;</label>
+                    <span>邮箱：sales@163.com</span>
+                </li>
+                <div class="clear"></div>
+                <div class="contact_qr"><img src="images/qr.gif" width="171" height="171" /></div>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="foot">
+	<div class="foot_t">
+    	<div class="foot_t_in">
+        	<div class="foot_t_in_l">理念</div>
+        	<div class="foot_t_in_r">创新发展 领航未来  金桃铝业 打造铝型材的知名品牌！</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="foot_m">
+    	<div class="foot_m_in">
+        	<div class="foot_m_qr">
+            	<img src="images/qr.gif" width="70" height="70" />
+                <span>桃园公众号</span>
+            </div>
+            <div class="foot_m_ct">
+            	清远市金桃园铝业有限公司 地址：清远市清城区石角镇循环经济产业园内<br/>
+				联系电话：0763-3719477 QQ：88888888 手机：188888888888 
+            </div>
+          <div class="foot_m_r">
+                <div class="foot_phone iconfont">&#xe64d; 服务热线:0763-319477</div>
+                <div class="foot_search_r"><input type="button" value="搜索"></div>
+                <div class="foot_search_l"><input id="txt_search" type="text"   value="Search..."  onFocus="if(value==defaultValue){value='';this.style.color='#d4d4d4'}" onBlur="if(!value){value=defaultValue;this.style.color='#3d425c'}" style="color:#3d425c"></div>
+                <div class="foot_qw iconfont"><a href="#">&#xe63a;</a> <a href="#">&#xe601;</a></div>
+          </div>
+        </div>
+    </div>
+    <div class="foot_b">
+   	  <div class="foot_b_in">
+        <div class="foot_b_l">
+                版权所有 2015-2017金色桃铝业<br/>
+                2015-2017 www.jintao.com All rights reserved 粤ICP备13018203号-1 
+            </div>
+            <div class="foot_b_r"><a href="#">首页</a>　|　<a href="#">企业简介</a>　|　<a href="#">新闻中心</a>　|　<a href="#">产品展示</a>　|　<a href="#">生产中心</a>　|　<a href="#">工程案例</a>　|　<a href="#">联系我们</a></div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
