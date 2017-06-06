@@ -1,9 +1,9 @@
 <?php
 //数据库配置字段
 define('DB_HOSTNAME','localhost');
-define('DB_USER','root');
-define('DB_PASSWORD','root');
-define('DB_DBNAME','jintao');
+define('DB_USER','taose');
+define('DB_PASSWORD','tao808');
+define('DB_DBNAME','taose');
 define('TB_PREFIX','doc_');
 //模板配置字段
 define('WEBOPEN',true);
