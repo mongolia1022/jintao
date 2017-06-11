@@ -1,5 +1,4 @@
 <!-- 产品图 -->
-</script>
 <?php 
 //2011-09-10
 $data=$tag['data.row'];
@@ -10,7 +9,7 @@ $data=$tag['data.row'];
 			$middlePic   = explode('|',$data['middlePic']);
 			$smallPic    = explode('|',$data['smallPic']);
 			?>
-	<div class="pro_in_l">
+	<div class="pro_in_l" style="display:none">
    	  <div class="pro_in_l_t">
         	<img src="<?php echo ispic($originalPic[0])?>" width="580" height="580" />
         </div>
@@ -31,7 +30,7 @@ $data=$tag['data.row'];
         </script>
     </div>
     
-    <div class="pro_in_r">
+    <div class="pro_in_r" style="display:none">
     	<div class="pro_in_r_t"><?php echo $data['title']; ?></div>    
         <div class="pro_in_r_m">
         	<div class="pro_in_r_m_l iconfont"><a href="###" id="arrLeft_01">&#xe620;</a></div>

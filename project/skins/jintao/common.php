@@ -63,7 +63,7 @@ var showdiv=[];
             </div>
             <div class="nav">
             	<ul>
-                	<li><a href="<?php echo $tag['path.root']; ?>/" class="now">首页</a></li>
+                	<li><a href="<?php echo $tag['path.root']; ?>/">首页</a></li>
                     <?php nav_main()?>
                 </ul>
             </div>
