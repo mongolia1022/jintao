@@ -1,9 +1,9 @@
 <?php
 //数据库配置字段
 define('DB_HOSTNAME','localhost');
-define('DB_USER','root');
-define('DB_PASSWORD','root');
-define('DB_DBNAME','jintao');
+define('DB_USER','taose');
+define('DB_PASSWORD','tao808');
+define('DB_DBNAME','taose');
 define('TB_PREFIX','doc_');
 //模板配置字段
 define('WEBOPEN',true);
@@ -11,15 +11,15 @@ define('WEBSIZE','500');
 define('WEBSIZECOUNTS','53');
 define('WEBURL','');    //PC 域名
 define('MOBILEURL','');  //移动域名
-define('SITENAME','jintao');
-define('SITEKEYWORDS','123');
-define('SITESUMMARY','');
+define('SITENAME','门窗铝型材|门窗铝型材厂家|装饰铝型材|工业铝型材-佛山市金桃铝业有限公司');
+define('SITEKEYWORDS','门窗铝型材|门窗铝型材厂家|装饰铝型材|工业铝型材');
+define('SITESUMMARY','门窗铝型材|门窗铝型材厂家|装饰铝型材|工业铝型材');
 define('HTMLPATH','');
 define('UPLOADPATH','/upload/');
 define('TIMEZONENAME','8');
 define('STYLENAME','jintao');      //PC 模板
-define('MOBILENAME','mobile');      //移动模板
-define('URLREWRITE',true);
+define('MOBILENAME','jintao');      //移动模板
+define('URLREWRITE',false);
 define('CACHETIME','0');
 define('DOCPING',false);
 //评论审核
@@ -44,14 +44,14 @@ define('WATERIMGS','/inc/img/system/doccms.png');
 //缩略图背景颜色设置
 define('paint_bgcolor','0xffffff');
 //分页样式
-define('PAGESTYLE','0'); 
+define('PAGESTYLE','1'); 
 //首页调用模板图片的默认尺寸
 define('articleWidth','140');
 define('articleHight','105');
 define('listWidth','140');
 define('listHight','105');
-define('productWidth','140');
-define('productHight','105');
+define('productWidth','280');
+define('productHight','280');
 define('pictureWidth','140');
 define('pictureHight','105');
 //列表模块页缩略图大小设置
@@ -61,8 +61,8 @@ define('moduleUserHight','120');
 /*上传图片的大小设置*/
 define('productMiddlePicWidth','560');
 define('productMiddlePicHight','420');
-define('productSmallPicWidth','300');
-define('productSmallPicHight','225');
+define('productSmallPicWidth','280');
+define('productSmallPicHight','280');
 define('pictureMiddlePicWidth','560');
 define('pictureMiddlePicHight','420');
 define('pictureSmallPicWidth','300');
@@ -76,7 +76,7 @@ define('linkersHight','30');
 //内容页列表模块单页显示默认条数
 define('listCount','12');
 define('pictureCount','12');
-define('productCount','6');
+define('productCount','8');
 define('videoCount','12');
 define('guestbookCount','10');
 define('commentCount','6');
@@ -91,8 +91,8 @@ define('orderISON',false);
 define('guestbookISON',false);
 define('smtpPort','');
 define('smtpServer','');
-define('smtpId','');
-define('smtpPwd','');
+define('smtpId','admin');
+define('smtpPwd','123');
 define('smtpSender','');
 define('smtpReceiver','');
 //支付宝设置

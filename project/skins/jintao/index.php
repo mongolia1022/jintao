@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title><?php echo $tag['seo.title']; ?></title>
+<meta name="viewport" content="width=1200, user-scalable=no, target-densitydpi=device-dpi">
 <meta name="keywords" content="<?php echo $tag['seo.keywords']; ?>" />
 <meta name="description" content="<?php echo $tag['seo.description'];  ?>" />
 <!-- Link Swiper's CSS -->
@@ -44,7 +45,19 @@ var showdiv=[];
 	}  
 }  
 </script>
-
+<script>
+	$(function(){
+		$('li a').mouseover(function(){
+			$(this).next('span').children('a').css('background','url(<?php echo $tag['path.skin']; ?>images/dot_pro.png)  260px 6px no-repeat #db0d0d')});
+			$('li a').mouseover(function(){
+			$(this).next('span').children('a').css('color','#fff')});
+			$('li a').mouseleave(function(){
+			$(this).next('span').children('a').css('background','#fff')});
+			$('li a').mouseleave(function(){
+			$(this).next('span').children('a').css('color','#484848')});
+			
+	});
+</script>
 </head>
 
 <body>
@@ -74,7 +87,7 @@ var showdiv=[];
 <!-- Swiper -->
 <div class="swiper-container swiper1">
     <div class="swiper-wrapper">
-        <?php doc_focus('1',3,0,0,0,true,'id',0)?>
+        <?php doc_focus('4',3,0,0,0,true,'id',0)?>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination-white"></div>
@@ -111,12 +124,12 @@ var swiper1 = new Swiper('.swiper1', {
 <div class="idx_hot">
 	<div class="idx_tab_t" id="tab1">
         <ul>
-            <?php nav_sub(14,0,2);?>
+            <?php nav_sub(3,0,2);?>
         </ul>
     </div>
 
 	<div id="tablist1">
-        <?php nav_sub(14,1,2);?>
+        <?php nav_sub(3,1,2);?>
     </div>
 </div>
 
@@ -125,7 +138,7 @@ var swiper1 = new Swiper('.swiper1', {
 <div class="bg_gray">
 	<div class="idx_project">
     	<ul>
-            <?php doc_product(21,8,0,0,0,0,true,false,'ordering',0)?>
+            <?php doc_product(5,8,0,0,0,0,true,false,'ordering',0)?>
             <div class="clear"></div>
         </ul>
     </div>
@@ -215,7 +228,7 @@ var swiper1 = new Swiper('.swiper1', {
                 <div class="foot_phone iconfont">&#xe64d; 服务热线:<?php doc_article('27',0,0,0,0,0,true,true,'id',0)?></div>
                 <div class="foot_search_r"><input type="button" value="搜索"></div>
                 <div class="foot_search_l"><input name="keyword" id="txt_search" type="text"   value="Search..."  onFocus="if(value==defaultValue){value='';this.style.color='#d4d4d4'}" onBlur="if(!value){value=defaultValue;this.style.color='#3d425c'}" style="color:#3d425c"></div>
-                <div class="foot_qw iconfont"><a href="#">&#xe63a;</a> <a href="#">&#xe601;</a></div>
+                <div class="foot_qw iconfont"><a href="tencent://message/?uin=245964942&Site=&menu=yes">&#xe63a;</a></div>
                 </form>
           </div>
         </div>

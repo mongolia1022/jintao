@@ -47,4 +47,4 @@
 </div>
 
 <!-- 页码 -->
-<div class="page"><?php if($tag['pager.en']) echo $tag['pager.en']; ?></div>
+<div class="page"><?php if($tag['pager.cn']) echo $tag['pager.cn']; ?></div>

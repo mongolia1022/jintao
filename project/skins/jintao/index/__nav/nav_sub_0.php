@@ -21,6 +21,6 @@ $select = $params['id']==$data['id']||$i==0?$select:'';
 $target = $data['isTarget']?$target:'';
 ?>
 <li onmouseover="setTab(1,<?php echo $i?>)" <?php echo $select?>><a href="<?php echo $url?>"><?php echo $data['title'];?></a></li>
-<?php if($i<5){?>
+<?php if($i<6){?>
 <span>　　|　　</span>
 <?php }?>
